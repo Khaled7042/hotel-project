@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 2%;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo h1 {
+  font-family: "Alex Brush", cursive;
+  font-size: 36px;
+  font-weight: 600;
+  color: darkblue;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-links .nav-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  margin-right: 20px;
+  width: 120px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-link a,
+.brand-logo a {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.content-container {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: -webkit-linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(117, 233, 251, 0.1),
+      rgba(116, 92, 252, 0.1)
+    ),
+    url("./assests/foto4.jpg") no-repeat center center / cover;
+  background: linear-gradient(
+      to bottom,
+      rgb(255, 255, 255),
+      rgba(220, 223, 187, 0.1),
+      rgba(116, 92, 252, 0.1)
+    ),
+    url("./assests/foto4.jpg") no-repeat center center / cover; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.content-container p {
+  width: 100%;
+  margin: 10px;
+  color: white;
+  font-size: 28px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  margin: auto;
+  width: 180px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.content-container button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+footer {
+  width: 100%;
+  background: rgb(12, 12, 12);
+  color: white;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+.box .content:after{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+}
+
+.left .content .social {
+  margin-top: 20px;
+}
+
+.left .content p {
+  text-align: justify;
+}
+
+.left .content .social a {
+  padding: 0 5px;
+}
+
+.left .content .social a i {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.left .content .social a i:hover {
+  background: #f12020;
+}
+
+.center .content .place,
+.center .content .phone,
+.center .content .mail {
+  display: flex;
+  align-items: center;
+}
+
+.center .content a i {
+  margin-bottom: 5px;
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .content a i:hover {
+  background: #f12020;
+}
+
+.center .content .text {
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.center .content .phone {
+  margin: 10px 0;
+}
+
+.right form .text {
+  font-size: 16px;
+  margin-bottom: 2px;
+  color: #656565;
+}
+
+.right form .message {
+  margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 16px;
+  padding-left: 10px;
+  background: #151515;
+  border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: #3498db;
+}
+
+.right form input {
+  height: 35px;
+}
+
+.right form .btn {
+  margin-top: 10px;
+}
+
+.right form .btn button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+  color: white;
+}
+
+.right form .btn button:hover{
+  background: #000;
+}
+
+.bottom center{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.bottom center span, .bottom center i{
+  color: #656565;
+}
+
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-content .box{
+    margin: 5px 0;
+  }
+
+  .nav-links{
+    flex-wrap: wrap;
+  }
+
+  .nav-link{
+    margin: 10px;
+  }
+}
